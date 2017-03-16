@@ -1,6 +1,10 @@
 #!/usr/bin/ruby
 require 'mp3info'
 
+def all_files(directory)
+  Dir.glob File.join(directory, '**/*')
+end
+
 def music_info(file_addr, *infos)
   Mp3Info.open file_addr do |file|
     file.tag.title = infos[0] if infos[0]
@@ -10,6 +14,8 @@ def music_info(file_addr, *infos)
   end
 end
 
-def main; end
+def main
+  file_list = all_files '/home/sci/Workspace'
+end
 
 main if __FILE__ == $PROGRAM_NAME
