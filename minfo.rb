@@ -2,7 +2,7 @@
 require 'mp3info'
 
 def all_files(directory)
-  Dir.glob File.join(directory, '**/*')
+  Dir.glob File.join(directory, '**', '*')
 end
 
 def music_info(file_addr, infos)
@@ -26,7 +26,7 @@ def bulk_music_info(file_list, music_infos)
 end
 
 def main
-  file_list = all_files '.'
+  file_list = all_files 'musics'
   music_infos = File.read 'music_infos.txt'
   bulk_music_info file_list, music_infos
 end
