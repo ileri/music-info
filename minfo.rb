@@ -22,7 +22,7 @@ end
 
 def bulk_music_info(file_list, music_infos)
   unless file_list.size == music_infos.lines.count
-    raise 'Number of files and infos is not equal!'
+    raise 'Number of files and info lines are not equal!'
   end
   file_list.each_with_index do |file, i|
     infos = music_infos.lines[i].split('-').each(&:strip!)
