@@ -42,6 +42,8 @@ Text dosyasındaki bilgileri dosya listesinde karşılığı gelen dosyalara ID3
 
 Karışıklığı önlemek için ilkel bir önlem olarak müzik bilgilerinin bulunduğu dosyadaki satır sayısı dosya listesindeki dosya sayısına eşit değilse herhangi bir eylem yapma.
 
+Müzik bilgisinin bulunduğu bir text dosyası olmayan durumlar için dosya adının uzantıdan önceki kısmını (basename) title tagına ata
+
 ## Yapılacaklar:
 
-Müzik bilgisinin bulunduğu bir text dosyası olmayan durumlar için dosya adının uzantıdan önceki kısmını (basename) title tag ına ata
+
